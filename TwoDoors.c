@@ -12,6 +12,12 @@ int main(int argc, const char * argv[])
 		printf("Would you like to play? (y/n): \n");	//Ask user if he wants to play.
 		scanf("%s", &play);				//Takes input from user and stores it in play string.
 
+		if (play == 'n'){
+
+		restart = 'n';
+		break;
+
+		}
 
 		if (play == 'y'){				//If user enters y, then print following to screen and ask to enter selection.
 	
@@ -46,7 +52,7 @@ int main(int argc, const char * argv[])
 		scanf("%s", &restart);				//Take input from user and store it in restart string.
 		}
 
-	} while (play == 'y');
+	} while (restart == 'y');
 
 	return 0;
 }
